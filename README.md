@@ -24,7 +24,7 @@ A browser-based version of the classic game "Stone Paper Scissors". The player c
 - Clean and responsive user interface
 
 ### 🚀 How to Run
-1. Open `stone-paper-scissors.html` in your browser.
+1. Run the code.
 2. Click on your choice to play (Rock, Paper, or Scissors).
 3. Results and scores will update in real-time.
 
@@ -42,7 +42,7 @@ A simple two-player Tic-Tac-Toe game playable in the browser. It offers a clean 
 - Minimalist UI for distraction-free play
 
 ### 🚀 How to Run
-1. Open `tic-tac-toe.html` in your browser.
+1. Run the code.
 2. Click on empty boxes to mark turns (X or O).
 3. The game announces the winner or a tie.
 
@@ -60,7 +60,7 @@ A basic simulation of an ATM machine interface that mimics key features like PIN
 - Error handling for invalid entries
 
 ### 🚀 How to Run
-1. Open `atm.html` in your browser.
+1. Run the code.
 2. Enter the correct PIN to access ATM functions.
 3. Choose between:
    - 💰 Withdraw
@@ -69,15 +69,6 @@ A basic simulation of an ATM machine interface that mimics key features like PIN
 4. View results and log out when done.
 
 ---
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-
----
-
 
 ## 🤝 Acknowledgements
 
