@@ -1,48 +1,69 @@
-# Define the board as a list
-board = [' ' for _ in range(9)]
+# TechnoHack Python Internship Projects
 
-# Function to print the board
-def print_board():
-  for i in range(3):
-    print(' | '.join(board[i*3:(i*3)+3]))
-    if i != 2:
-      print('-' * 5)
+This repository contains three Python mini-projects developed during my Python Development Internship at TechnoHack Solutions. These projects demonstrate core programming concepts such as logical problem solving, object-oriented programming, game development, and user interaction through command-line applications.
 
-# Function to check for a win
-def is_victory(mark):
-  win_conditions = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
-  for condition in win_conditions:
-    if board[condition[0]] == mark and board[condition[1]] == mark and board[condition[2]] == mark:
-      return True
-  return False
+## Projects Included
 
-# Function to check for a draw
-def is_draw():
-  return all(x != ' ' for x in board)
+### Stone Paper Scissors
 
-# Main game loop
-current_player = 'X'
-while True:
-  print_board()
-  # Get player move
-  move = int(input(f"Player {current_player}, enter your move (1-9): ")) - 1
-  if board[move] == ' ':
-    board[move] = current_player
-  else:
-    print("Invalid move. Try again.")
-    continue
+A command-line implementation of the classic Stone Paper Scissors game where the player competes against the computer.
 
-  # Check for win or draw
-  if is_victory(current_player):
-    print_board()
-    print(f"Player {current_player} wins!")
-    break
-  elif is_draw():
-    print_board()
-    print("It's a draw!")
-    break
+#### Features
 
-  # Switch turns
-  current_player = 'O' if current_player == 'X' else 'X'
+* User vs Computer Gameplay
+* Random Computer Choice Generation
+* Win/Lose/Draw Detection
+* Command Line Interface
 
-print("Thanks for playing!")
+### Tic Tac Toe (XO Game)
+
+A two-player command-line Tic Tac Toe game with victory and draw detection logic.
+
+#### Features
+
+* Two Player Gameplay
+* Win Detection
+* Draw Detection
+* Interactive Game Board
+
+### ATM Transaction System
+
+A simple ATM simulation developed using Object-Oriented Programming concepts.
+
+#### Features
+
+* Balance Inquiry
+* Deposit Functionality
+* Withdrawal Functionality
+* Menu-Driven Interface
+* Class-Based Design
+
+## Technologies Used
+
+* Python 3
+* Object-Oriented Programming (OOP)
+* Random Module
+* Command Line Interface (CLI)
+
+## Learning Outcomes
+
+* Python Fundamentals
+* OOP Concepts
+* Logical Problem Solving
+* User Input Handling
+* Application Flow Control
+
+## Internship
+
+Developed as part of the Python Development Internship at TechnoHack Solutions.
+
+## Future Improvements
+
+* Graphical User Interface (GUI)
+* PIN Authentication for ATM System
+* Score Tracking for Stone Paper Scissors
+* Single Player AI Mode for Tic Tac Toe
+
+## Maintainer
+
+GitHub: Abi-2701
